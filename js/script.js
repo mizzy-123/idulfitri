@@ -1,6 +1,7 @@
 let card = document.querySelector(".card-a");
 let textElement = document.querySelector(".text");
 let mainElement = document.querySelector(".main");
+let c_text = document.querySelector(".c-text");
 
 card.addEventListener("click", (e) => {
   e.currentTarget.classList.toggle("clicked");
@@ -36,7 +37,7 @@ card.addEventListener("click", (e) => {
 function onClickHandler() {
   let start = document.querySelector(".start");
   start.style.display = "none";
-  textElement.style.display = "inline";
+  c_text.style.display = "inline-flex";
   var audio = document.getElementById("myAudio");
   audio.currentTime = 36;
   audio.play();
